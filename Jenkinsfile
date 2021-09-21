@@ -8,7 +8,7 @@ podTemplate(containers: [
    ]) {
    node(POD_LABEL) {
        stage('Get a Maven project') {
-           git 'https://github.com/dlambrig/simple-java-mavenapp.git'
+           git 'https://github.com/pyd6802/uml-ex4-git.git'
            container('maven') {
                stage('Build a Maven project') {
                    sh '''
